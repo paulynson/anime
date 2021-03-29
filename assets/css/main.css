@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+ 
+
+}
+
+body{
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none !important;
+   
+}
+
+.editor{
+    background-color: #f2f2f2;
+    z-index: 1111;
+    padding: 10px 14px;
+    border-radius: 60px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    color: red !important;
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+    transition: .4s ease-in-out;
+}
+
+.fa{
+    color: red;
+    font-size: 20px !important;
+    transition: .4s ease-in-out;
+}
+
+.tour{
+    display: inline-block;
+    transition: .4s ease-in-out;
+    margin-left: 5px !important;
+}
+
+.tour.active{
+        display: none;
+        transition: .4s ease-in-out;
+}
+
+.btn-tab:hover{
+background-color: #212529 !important;
+color: #ffffff;
+}
+
+.btn-sub{
+    background: teal;
+    box-sizing: border-box;
+    width: 50%;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 8px 8px;
+    cursor: pointer;
+  }
+
+  .btn-sub:hover{
+    background: rgb(3, 68, 77);
+  }
+
+  .anime{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    animation: test 3s infinite;
+    z-index: -1;
+    position: absolute;
+    transition: .3S ease-in-out;
+  }
+  
+  input{
+    background: transparent;
+    box-sizing: border-box;
+    width: 50%;
+    color: black;
+    border: 0;
+    outline: 0;
+    margin: 10px 0;
+    padding: 8px 8px;
+    border-bottom: 3px solid rgba(230, 115, 115, 0.08);
+    
+  }
+
+  .int-point{
+    margin-bottom: 20px !important;
+  }
+
+  form{
+      width: 50%;
+      clear: both;
+      box-sizing: border-box;
+      padding: 30px 10px;
+      margin: 50px auto;
+      text-align: center;
+      background-color: rgba(0,0,0,0.009);
+      align-items: center;
+      box-shadow: .5px .5px .5px rgba(0,0,0,0.09);
+      animation: tested 3s infinite;
+      position: relative;
+      z-index: 1;
+  }
+
+  @media(max-width: 800px){
+    form{
+        width: 90%;
+        clear: both;
+        box-sizing: border-box;
+        padding: 30px 10px;
+        margin: 50px auto;
+        text-align: center;
+        background-color: rgba(0,0,0,0.009);
+        align-items: center;
+        box-shadow: .5px .5px .5px rgba(0,0,0,0.09);
+    }
+
+    input{
+        background: transparent;
+        box-sizing: border-box;
+        width: 70%;
+      }
+    
+      .btn-sub{
+        width: 70%;
+      
+      }
+
+  }
+
+  @keyframes test{
+   0%   {top: 0px; background: transparent; width: 50px; left:70%;}
+   50%   {top: 300px; background: gainsboro; width: 50px; left:50%;}
+  100% {top: 0px; background: transparent; width: 50px; left:30%;}
+  }
+
+  @keyframes tested{
+    0%   {top: 0px;}
+    50%   {top: 20px;}
+   100% {top: 0px;}
+   }
